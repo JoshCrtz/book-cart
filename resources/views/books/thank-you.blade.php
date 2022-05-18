@@ -16,6 +16,16 @@
 
     <ul class="list-unstyled">
     <!-- 1. Display all the reserved books -->
+    <?php
+        if(!empty($_POST["books"]))
+        {
+            echo '<h2>Reserved books:</h2>';
+            foreach ($_POST["books"] as $book)
+            {
+                echo '<p>'.$book.'</p>';
+            }
+        }
+    ?>
     </ul>
 
 </div>
